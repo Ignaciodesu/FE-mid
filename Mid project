@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Evergarden Fanpage</title>
+    <style>
+        /* Tambahkan styling untuk efek parallax */
+        #introduction {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section 1: Introduction -->
+        <section id="introduction" style="background-image: url('violet-evergarden.jpg');">
+            <h1>Violet Evergarden Fanpage</h1>
+            <p>Discover the world of Violet Evergarden, an emotionally compelling anime character.</p>
+        </section>
+
+        <!-- Section 2: Gallery -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <!-- Add images related to Violet Evergarden -->
+            <div>
+                <img src="Violet Evergarden1 copy.jpg" alt="Violet Evergarden1" width="500">
+                <img src="Violet Evergarden2.jpeg" alt="Violet Evergarden2" width="500">
+                <img src="Violet Evergarden3.jpeg" alt="Violet Evergarden3" width="500">
+            </div>
+        </section>
+
+        <!-- Section 3: Quotes -->
+        <section id="quotes">
+            <h2>Quotes</h2>
+            <!-- Add quotes from Violet Evergarden -->
+            <blockquote>"I want to know what 'I love you' means."</blockquote>
+            <blockquote>"I'm Violet Evergarden, and I'm an Auto Memories Doll."</blockquote>
+        </section>
+
+        <!-- Section 4: Contact Form -->
+        <section id="contact">
+            <h2>Contact the Fanpage</h2>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Violet Evergarden Fanpage. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Tambahkan JavaScript untuk efek parallax -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const offset = window.scrollY;
+            document.getElementById('introduction').style.backgroundPositionY = -offset * 0.5 + 'px';
+        });
+    </script>
+</body>
+</html>
